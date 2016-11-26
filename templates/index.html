@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- HEADER -->
+<header id="header">
+    <div class="container">
+        <div class="intro-text">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 padding-0">
+                    <h1 class="intro-lead-in">
+                        <span class="one">SIAV</span> permite a los valuadores mejorar su negocio.<br><span class="two">Así de simple.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-lg-4 col-lg-offset-1 padding-0">
+                    <span class="intro-heading">Con poco esfuerzo los valuadores disfrutan de más tiempo y realizan trabajo más completo.</span>
+                </div>
+                <div class="col-md-7 col-lg-7 header-dashboard padding-0 md-center">
+                    <img src="{{ STATIC_URL }}img/house.png" class="dashboard" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="subscribe" class="header-buttons">
+        <div class="container">
+         <form class="subscribe-form">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="section-heading">Solicita una demostración</h2>
+                </div>
+                <div class="col-lg-5 form-group col-lg-offset-0 padding-0 col-md-7 col-md-offset-1 form-group">
+                    {{suscripcion.email_suscripcion}} 
+                </div>
+                <div class="col-lg-2 col-md-3"> 
+                    <button type="submit">Enviar</button>
+                </div>
+                {% csrf_token %}        
+            </div>
+            <div id="subscribe-success"></div>
+        </form>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+<!-- ABOUT -->
+<section id="services">
+    {% include "about.html" %}
+</section>
+<!-- END ABOUT -->
+<!-- FEATURES -->
+<section id="features" class="">
+    {% include "features.html" %}
+</section>
+<!-- END FEATURES -->
+<!-- CLIENTS -->
+<section id="clients" class="">
+    {% include "clients.html" %}
+</section>
+<!-- END CLIENTS -->
+<!-- CONTACT -->
+<section id="contact">
+    {% include "contact.html" %}
+</section>
+<!-- END CONTACT -->
+{% endblock %}
+{% block scripts %}
+    <!-- google map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="{{ STATIC_URL }}js/script_map.js"></script>
+{% endblock %}

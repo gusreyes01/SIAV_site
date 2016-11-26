@@ -1,0 +1,15 @@
+
+<!-- Form Contact -->
+{% if email %}
+	<h3>Nuevo mensaje de tu portal</h3>
+	<p>Nombre: {{ nombre }}</p>
+	<p>Correo: {{ email }}</p>
+	<p>Mensaje: {{ mensaje }}</p>
+{% endif %}
+
+<!-- Form Subscription -->
+{% if email_suscripcion %}
+	<h3>Tienes una nueva solicitud de suscripción.</h3>
+	<p>Correo: {{ email_suscripcion }}</p>
+{% endif %}
+

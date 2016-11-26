@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- HEADER -->
+<header id="header">
+    <div class="container">
+        <div class="intro-text">
+            <div class="row">
+                <div class="col-md-5 col-lg-5 col-lg-offset-1 padding-0">
+                    <h1 class="intro-lead-in">Conoce nuestros planes.</h1>
+                    <span class="intro-heading">Seguro encontrarás dentro de nuestros planes uno que cubra todas tus necesidades.</span>
+                </div>
+                <div class="col-md-7 col-lg-6 header-dashboard padding-0 md-center">
+                    <img src="{{ STATIC_URL }}img/planes.png" class="dashboard" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+<!-- PRICING TABLES -->
+<section id="pricing">
+    <div class="container">
+        <div class="row outer-margin">
+            <!-- PRICING TABLE 1 -->
+            <div class="col-md-4">
+                <div class="row pricing-title">Usuario Básico</div>
+                <div class="row pricing">
+                    <div class="col-lg-3 col-md-3 col-sm-3" >
+                        <div class="row">
+                            <span class="pricing-price"><span class="currency">$</span>500</span>
+                            <span class="pricing-time">/mxn</span>
+                            <div class="billing-time">1 - 4 valuadores</div>
+                        </div>
+                    </div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Capacitación inicial</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Almacenamiento ilimitado de archivos</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Respaldos diarios de infomación</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Acceso a plataforma responsiva<br>para celulares y tabletas</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Administación de permisos</span></span></div>
+                    <div class="pricing-row button-container">
+                        <a href="#" class="secondary-button secondary-button-inverse">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- PRICING TABLE 2 -->
+            <div class="col-md-4">
+                <div class="row pricing-title">Equipo Plus</div>
+                <div class="row pricing active">
+                    <div class="col-lg-3 col-md-3 col-sm-3" >
+                        <div class="row">
+                            <span class="pricing-price"><span class="currency">$</span>2,300</span>
+                            <span class="pricing-time">/mxn</span>
+                            <div class="billing-time">5 - 10 valuadores</div>
+                        </div>
+                    </div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Capacitación inicial</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Almacenamiento ilimitado de archivos</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Respaldos diarios de infomación</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Acceso a plataforma responsiva<br>para celulares y tabletas</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Administación de permisos</span></span></div>
+                    <div class="pricing-row button-container">
+                        <a href="#" class="secondary-button secondary-button-inverse">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- PRICING TABLE 3 -->
+            <div class="col-md-4">
+                <div class="row pricing-title">Equipo Gold</div>
+                <div class="row pricing">
+                    <div class="col-lg-3 col-md-3 col-sm-3" >
+                        <div class="row">
+                            <span class="pricing-price"><span class="currency">$</span>4,500</span>
+                            <span class="pricing-time">/mxn</span>
+                            <div class="billing-time">10 valuadores o más</div>
+                        </div>
+                    </div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Capacitación inicial</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Almacenamiento ilimitado de archivos</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Respaldos diarios de infomación</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Acceso a plataforma responsiva<br>para celulares y tabletas</span></span></div>
+                    <div class="pricing-row"><span class="pricing-value"><span class="pricing-option"><span class="bullet-pricing">-</span> Administación de permisos</span></span></div>
+                    <div class="pricing-row button-container">
+                        <a href="#" class="secondary-button secondary-button-inverse">comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PRICING TABLES -->
+{% endblock %}

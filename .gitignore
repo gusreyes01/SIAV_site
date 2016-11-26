@@ -1,0 +1,5 @@
+*.xml
+*.iml
+SIAV_site/settings.py
+*.pyc
+*/migrations
