@@ -526,7 +526,13 @@ body.modal-open {
 /* --------------------------------------
 4. MENU
 -----------------------------------------*/
-
+.navbar-default .nav li a.primary-button.siav {
+    height: 40px;
+    line-height: 6px;
+    min-width: 160px;
+    font-family: 'Arimo';
+    letter-spacing: 0.2px;
+}
 .navbar-default {
     border-color: transparent;
     background-color: #2b3940;

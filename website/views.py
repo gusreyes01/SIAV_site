@@ -66,6 +66,11 @@ def producto(request):
   page = 'features_page'
   return render(request, 'producto.html', locals())
 
+def producto_option(request, option):
+  page = 'features_page'
+  select_tab = option
+  return render(request, 'producto.html', locals())
+
 
 def contacto(request):
   page = 'contact_page'

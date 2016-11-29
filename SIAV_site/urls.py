@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^suscripcion/$', website.views.suscripcion, name='suscripcion'),
     url(r'^planes/$', website.views.planes, name='planes'),
     url(r'^producto/$', website.views.producto, name='producto'),
+    url(r'^producto/(\w+)$', website.views.producto_option, name='producto_option'),
     url(r'^contacto/$', website.views.contacto, name='contacto'),
     url(r'^faq/', website.views.faq, name='faq'),
 ]

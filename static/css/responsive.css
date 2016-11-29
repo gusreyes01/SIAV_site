@@ -1,4 +1,5 @@
 @media (max-width: 1199px){
+    .logo img {height: auto;max-width: 375px;}
     #features-tab1 img {
         max-width: 460px;
         margin-top: 35px;
