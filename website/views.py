@@ -45,6 +45,11 @@ def contact(request):
 
 @csrf_exempt
 def suscripcion(request):
+  forma_suscripcion = FormaSuscripcion(request.POST)
+  if forma_suscripcion.is_valid():
+    fs = forma_suscripcion.save(commit=False)
+    fs.save()
+
   if request.method == 'POST':
     email_suscripcion = request.POST['email_suscripcion']
 
