@@ -38,7 +38,7 @@ def contact(request):
        
         send_mail_wrapper('Mensaje de tu portal ',
                           'email_template.html',
-                          context, ['dul.rdzs@gmail.com'])
+                          context, ['gusreyes01@gmail.com'])
 
         return HttpResponse('')
 
@@ -57,7 +57,7 @@ def suscripcion(request):
 
     send_mail_wrapper('Mensaje de tu portal ',
                       'email_template.html',
-                      context, ['dul.rdzs@gmail.com'])
+                      context, ['gusreyes01@gmail.com'])
 
     return HttpResponse('')
 
