@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-from django.forms import ModelForm
 from django import forms
+from django.forms import ModelForm
+
 from website.models import Suscripcion
+
 
 class FormaContacto(forms.Form):
     nombre = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Nombre', 'class': 'form-control'}), required=True)
