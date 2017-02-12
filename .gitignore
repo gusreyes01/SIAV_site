@@ -3,3 +3,4 @@
 SIAV_site/settings.py
 *.pyc
 */migrations
+db.sqlite3
